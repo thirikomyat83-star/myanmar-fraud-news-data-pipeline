@@ -2,7 +2,7 @@
 # CELL 2: FASTAPI SERVER, /health, HUGGING FACE MODEL & UI DASHBOARD
 # ==============================================================================
 
-!pip install -q fastapi uvicorn pydantic nest-asyncio transformers torch sentence-transformers
+
 
 import nest_asyncio
 nest_asyncio.apply()
