@@ -161,12 +161,8 @@ def get_dashboard():
     </html>
     """
 
-def run_server():
-    uvicorn.run(app, host="0.0.0.0", port=8000, log_level="warning")
-
-server_thread = threading.Thread(target=run_server, daemon=True)
-server_thread.start()
-
-print("\n>>> 🚀 FastAPI Server အောင်မြင်စွာ တက်လာပါပြီ!")
-print(">>> 🌐 Dashboard Link: http://localhost:8000/dashboard")
-print(">>> 🩺 Health Check: http://localhost:8000/health\n")
+if __name__ == "__main__":
+    import uvicorn
+    import os
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run("app:app", host="0.0.0.0", port=port)
