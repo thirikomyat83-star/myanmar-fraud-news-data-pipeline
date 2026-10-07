@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+pydantic
+boto3
+pandas
+psycopg2-binary
+sentence-transformers
+transformers
+torch
+scikit-learn
+joblib
+nest-asyncio
